@@ -9,23 +9,17 @@
 /* Begin PBXBuildFile section */
 		6DADD5BD2A2D30C900036BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADD5BC2A2D30C900036BF8 /* AppDelegate.swift */; };
 		6DADD5BF2A2D30C900036BF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADD5BE2A2D30C900036BF8 /* SceneDelegate.swift */; };
-		6DADD5C42A2D30C900036BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DADD5C22A2D30C900036BF8 /* Main.storyboard */; };
 		6DADD5C62A2D30CA00036BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DADD5C52A2D30CA00036BF8 /* Assets.xcassets */; };
 		6DADD5C92A2D30CA00036BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DADD5C72A2D30CA00036BF8 /* LaunchScreen.storyboard */; };
-		6DADD5D12A2D3D6B00036BF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADD5D02A2D3D6B00036BF8 /* LoginViewController.swift */; };
-		6DADD5D32A2D3D8600036BF8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADD5D22A2D3D8600036BF8 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6DADD5B92A2D30C900036BF8 /* agro-market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "agro-market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DADD5BC2A2D30C900036BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DADD5BE2A2D30C900036BF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DADD5C32A2D30C900036BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DADD5C52A2D30CA00036BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DADD5C82A2D30CA00036BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DADD5CA2A2D30CA00036BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DADD5D02A2D3D6B00036BF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		6DADD5D22A2D3D8600036BF8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +33,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0F495E2A2E410D00C8D76B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DADD5C72A2D30CA00036BF8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D0F495F2A2E416900C8D76B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DADD5BE2A2D30C900036BF8 /* SceneDelegate.swift */,
+				6DADD5BC2A2D30C900036BF8 /* AppDelegate.swift */,
+				6DADD5CA2A2D30CA00036BF8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6D0F49602A2E418600C8D76B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DADD5C52A2D30CA00036BF8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6DADD5B02A2D30C900036BF8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +78,9 @@
 		6DADD5BB2A2D30C900036BF8 /* agro-market */ = {
 			isa = PBXGroup;
 			children = (
-				6DADD5BC2A2D30C900036BF8 /* AppDelegate.swift */,
-				6DADD5BE2A2D30C900036BF8 /* SceneDelegate.swift */,
-				6DADD5C22A2D30C900036BF8 /* Main.storyboard */,
-				6DADD5D02A2D3D6B00036BF8 /* LoginViewController.swift */,
-				6DADD5D22A2D3D8600036BF8 /* ProfileViewController.swift */,
-				6DADD5C52A2D30CA00036BF8 /* Assets.xcassets */,
-				6DADD5C72A2D30CA00036BF8 /* LaunchScreen.storyboard */,
-				6DADD5CA2A2D30CA00036BF8 /* Info.plist */,
+				6D0F495F2A2E416900C8D76B /* App */,
+				6D0F495E2A2E410D00C8D76B /* Storyboards */,
+				6D0F49602A2E418600C8D76B /* Resources */,
 			);
 			path = "agro-market";
 			sourceTree = "<group>";
@@ -130,7 +145,6 @@
 			files = (
 				6DADD5C92A2D30CA00036BF8 /* LaunchScreen.storyboard in Resources */,
 				6DADD5C62A2D30CA00036BF8 /* Assets.xcassets in Resources */,
-				6DADD5C42A2D30C900036BF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DADD5D12A2D3D6B00036BF8 /* LoginViewController.swift in Sources */,
 				6DADD5BD2A2D30C900036BF8 /* AppDelegate.swift in Sources */,
-				6DADD5D32A2D3D8600036BF8 /* ProfileViewController.swift in Sources */,
 				6DADD5BF2A2D30C900036BF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6DADD5C22A2D30C900036BF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DADD5C32A2D30C900036BF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6DADD5C72A2D30CA00036BF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +297,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85B3535D96;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "agro-market/Info.plist";
+				INFOPLIST_FILE = "agro-market/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85B3535D96;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "agro-market/Info.plist";
+				INFOPLIST_FILE = "agro-market/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
